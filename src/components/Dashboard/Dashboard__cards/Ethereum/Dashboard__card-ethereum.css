@@ -1,0 +1,20 @@
+.Dashboard__card-ethereum__wrapper {
+    display: grid;
+    grid-area: 2 / 3 / span 1 / span 1;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: .1em;
+    border-radius: .5em;
+    padding: .5em;
+    background-color: $red;
+}
+
+.Dashboard__card-ethereum__logo {
+    grid-area: 1 / 1 / span 1 / span 1;
+    align-self: start;
+    width: 3em;
+    height: 3em;
+    border-radius: .5em;
+    padding: .2em .7em .7em .7em;
+    margin: .15em;
+    background-color: $title;
+}

@@ -1,0 +1,11 @@
+import React from 'react';
+import './styles/main.css';
+import Wallet from './container/Wallet';
+
+function App() {
+  return (
+    <Wallet />
+  );
+}
+
+export default App;

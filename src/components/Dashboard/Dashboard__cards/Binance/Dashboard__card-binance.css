@@ -1,0 +1,65 @@
+.Dasboard__card-binance__wrapper {
+    display: grid;
+    grid-area: 2 / 1 / span 1 / span 1;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: .1em;
+    border-radius: .5em;
+    padding: .5em;
+    background-color: $green;
+}
+
+.Dashboard__card-binance__logo {
+    grid-area: 1 / 1 / span 1 / span 1;
+    align-self: start;
+    width: 3em;
+    height: 3em;
+    border-radius: .5em;
+    padding: .5em;
+    margin: .15em;
+    background-color: $title;
+}
+
+.Dasboard__card__options {
+    display: flex;
+    justify-self: end;
+    align-self: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .1em;
+    grid-area: 1 / 2 / span 1 / span 1;
+    cursor: pointer;
+}
+
+.Dasboard__card__options-item {
+    width: .3em;
+    height: .3em;
+    border-radius: .15em;
+    background-color: $title;
+}
+
+.Dashboard__card__chart {
+    width: 7rem;
+    grid-area: 2 / 2 / span 2 / span 1;
+}
+
+.Dashboard__card__title {
+    grid-area: 2 / 1 / span 1 / span 1;
+    font-family: 'Inter';
+    margin: .15em;
+    &::before {
+        font-family: 'Inter';
+        content: '$';
+    }
+}
+
+.Dashboard__card__stats{
+    display: flex;
+    flex-direction: row;
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+
+.Dashboard__card__stats__time {
+    font-family: 'Inter';
+    font-size: 1rem
+}

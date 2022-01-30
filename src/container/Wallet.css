@@ -1,0 +1,47 @@
+$white: rgba(255, 255, 255);
+$bg: rgb(229,229,229);
+$text_icons: rgba(185, 185, 185, 1);
+$title: rgba(23, 23, 23, 1);
+$grey: rgb(156,152,152);
+$black: rgb(59,59,59);
+$green: rgb(187,231,172);
+$blue: rgb(123,186,244);
+$red: rgb(247,134,126);
+
+@font-face {
+    font-family: 'Title';
+    src: url('/src/assets/Fonts/Pacifico/Pacifico-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/src/assets/Fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    font-family: 'Inter';
+    color: $title
+}
+
+strong {
+    font-family: 'Inter';
+    color: $title;
+    &::after {
+        content: '%';
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* width: 100%; */
+}
+

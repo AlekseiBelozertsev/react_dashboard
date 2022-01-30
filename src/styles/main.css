@@ -1,0 +1,18 @@
+@import '../container/Wallet.css';
+@import '../components/Header/Header.css';
+@import '../components/Titles/Titleh2.css';
+@import '../components/Input/Input.css';
+@import '../components/Messages_button/Msgs_btn.css';
+@import '../components/Notifications_button/Nots_btn.css';
+@import '../components/Settings_btn/Settings_btn.css';
+@import '../components/Sidebar/Sidebar.css';
+@import '../components/Dashboard/Dashboard__titles/Dashboard_Title/Dashboard__title.css';
+@import '../components/Dashboard/Dashboard__filter/Dashboard__filter.css';
+@import '../components/Dashboard/Dashboard__cards/Binance/Dashboard__card-binance.css';
+@import '../components/Dashboard/Dashboard__cards/Bitcoin/Dashboard__card-bitcoin.css';
+@import '../components/Dashboard/Dashboard__cards/Ethereum/Dashboard__card-ethereum.css';
+@import '../components/Dashboard/Dashboard__order/Dashboard__order.css'
+
+
+
+/* Все файлы отсюда идут в index.css, в эту папку они приходят посредством постсиэсэм импорта из компонентов. */

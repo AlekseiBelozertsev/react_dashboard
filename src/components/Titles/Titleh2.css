@@ -1,0 +1,29 @@
+.Title_h2__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.Title_h2 {
+    padding: .2em;
+    color: $title;
+    font-family: 'Title';
+    cursor: pointer;
+    transition: .3s;
+    &:hover {
+        color: $text_icons
+    }
+}
+
+.Titleh2__hamburger {
+    display: flex;
+    flex-direction: column;
+}
+
+.Titleh2__hamburger--item {
+    width: 2rem;
+    min-height: .3em;
+    background-color: $title;
+    margin: .1em 1em .1em .1em;
+    border-radius: .1em;
+}

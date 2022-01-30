@@ -1,0 +1,20 @@
+.Dashboard__chart {
+    grid-area: 3 / 1 / span 2 / span 3;
+}
+
+.Dashboard__chart__header {
+    display: flex;
+    flex-direction: row;
+    padding: .5em;
+    justify-content: space-between;;
+}
+
+.Dashboard__chart__titles {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Dashboard__chart__title {
+    font-family: 'Inter';
+}

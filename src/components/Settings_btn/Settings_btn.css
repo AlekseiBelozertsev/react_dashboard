@@ -1,0 +1,20 @@
+.Settings_btn__ellipse {
+    position: relative;
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    border: none;
+    padding: .25em;
+    background-color: grey;
+    cursor: pointer;
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1.5em;
+        height: 1.5em;
+        transform: translate(1%, -50%);
+        background-image: url('/src/assets/cog-solid.svg');
+        color: $bg;
+    }
+}

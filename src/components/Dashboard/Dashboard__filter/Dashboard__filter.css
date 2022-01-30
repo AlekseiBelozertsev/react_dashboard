@@ -1,0 +1,19 @@
+.Dashboard__filter {
+    grid-area: 1 / 4 / span 1 / span 1;
+    border: .1em solid $text_icons;
+    justify-self: end;
+    border-radius: .4em; 
+    padding: .4em .5em .4em 1.5em;
+    margin: 0;
+    background: none;
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 1.1em;
+        height: 1.1em;
+        transform: translate(-100%, 5%);
+        background-image: url('/src/assets/filter-solid.svg');
+        background-repeat: no-repeat;
+    }
+}

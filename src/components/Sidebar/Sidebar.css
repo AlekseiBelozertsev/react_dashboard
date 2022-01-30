@@ -1,0 +1,98 @@
+.Sidebar__wrapper {
+    position: fixed;
+    grid-area: 2 / 1 / span 4 / span 1;
+    height: 100%;
+    width: 12em;
+    margin-top: 4em;
+    top: 0;
+    left: 0;
+    overflow-x: hidden; 
+    padding-top: 3.5em; 
+    transition: .5s;
+    background-color: $black;
+}
+
+.Sidebar__nav a {
+    padding: .2em .2em .7em 2em;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: 'Inter';
+    color: $text_icons;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+        color: $white;
+    }
+}
+
+.Sidebar__nav__closebtn {
+    position: absolute;
+    top: 0;
+    right: .25em;
+}
+
+.Sidebar__nav__item-1::before {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 0.5em;
+    background-image: url('/src/assets/columns-solid.svg');
+}
+
+.Sidebar__nav__item-2::before {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 0.5em;
+    background-image: url('/src/assets/wallet-solid.svg');
+}
+
+.Sidebar__nav__item-3::before {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 0.5em;
+    background-image: url('/src/assets/money-bill-wave-solid.svg');
+    background-repeat: no-repeat;
+}
+
+.Sidebar__nav__item-4::before {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 0.5em;
+    background-image: url('/src/assets/bitcoin-brands.svg');
+    background-repeat: no-repeat;
+}
+
+.Sidebar__nav__item-5::before {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 0.5em;
+    background-image: url('/src/assets/exchange-alt-solid.svg');
+    background-repeat: no-repeat;
+}
+
+.Sidebar__nav__item-6::before {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 0.5em;
+    background-image: url('/src/assets/cog-solid.svg');
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    .Sidebar__wrapper {margin-top: 6em;}
+    .Sidebar__nav a {font-size: 1rem;}
+  }
+
+  /* Попытаться использовать clamp() вместо @media */
