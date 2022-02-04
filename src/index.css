@@ -267,41 +267,49 @@ strong::after {
         background-image: url('/src/assets/filter-solid.svg');
         background-repeat: no-repeat;
     }
-.Dasboard__card-binance__wrapper {
+/* @import '../components/Dashboard/Dashboard__cards/Binance/Dashboard__card-binance.css';
+@import '../components/Dashboard/Dashboard__cards/Bitcoin/Dashboard__card-bitcoin.css';
+@import '../components/Dashboard/Dashboard__cards/Ethereum/Dashboard__card-ethereum.css'; */
+.Dashboard__card__wrapper_green {
     display: grid;
     grid-area: 2 / 1 / span 1 / span 1;
     grid-template-columns: 2fr 1fr;
     grid-gap: .1em;
     border-radius: .5em;
     padding: .5em;
-    background-color: rgb(187,231,172);
 }
-.Dashboard__card-binance__logo {
+.Dashboard__card__wrapper_blue {
+    display: grid;
+    grid-area: 2 / 2 / span 1 / span 1;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: .1em;
+    border-radius: .5em;
+    padding: .5em;
+}
+.Dashboard__card__wrapper_red  {
+    display: grid;
+    grid-area: 2 / 3 / span 1 / span 1;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: .1em;
+    border-radius: .5em;
+    padding: .5em;
+}
+.Dashboard__card__logo {
     grid-area: 1 / 1 / span 1 / span 1;
     align-self: start;
     width: 3em;
     height: 3em;
     border-radius: .5em;
-    padding: .5em;
-    margin: .15em;
-    background-color: rgba(23, 23, 23, 1);
+    padding: .1em;
+    /* margin: .15em; */
 }
-.Dasboard__card__options {
-    display: flex;
-    justify-self: end;
-    align-self: start;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .1em;
-    grid-area: 1 / 2 / span 1 / span 1;
-    cursor: pointer;
+.fa-ethereum {
+  width: 3em;
+  height: 2.7em;
 }
-.Dasboard__card__options-item {
-    width: .3em;
-    height: .3em;
-    border-radius: .15em;
-    background-color: rgba(23, 23, 23, 1);
+.Dashboard__card__chart {
+    width: 7rem;
+    grid-area: 2 / 2 / span 2 / span 1;
 }
 .Dashboard__card__title {
     grid-area: 2 / 1 / span 1 / span 1;
@@ -317,47 +325,20 @@ strong::after {
     flex-direction: row;
     grid-area: 3 / 1 / span 1 / span 2;
 }
-.Dashboard__card__stats__time {
+.Dashboard__card__stats__thisWeek::before {
+    content: 'This week';
+    font-family: 'Inter';
+    font-size: 1rem;
+}
+.Dashboard__card__stats__lastWeek::before {
+    content: 'Last week';
     font-family: 'Inter';
     font-size: 1rem
 }
-.Dasboard__card-bitcoin__wrapper {
-    display: grid;
-    grid-area: 2 / 2 / span 1 / span 1;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: .1em;
-    border-radius: .5em;
-    padding: .5em;
-    background-color: rgb(123,186,244);
-}
-.Dashboard__card-bitcoin__logo {
-    grid-area: 1 / 1 / span 1 / span 1;
-    align-self: start;
-    width: 3em;
-    height: 3em;
-    border-radius: .5em;
-    padding: .5em;
-    margin: .15em;
-    background-color: rgba(23, 23, 23, 1);
-}
-.Dashboard__card-ethereum__wrapper {
-    display: grid;
-    grid-area: 2 / 3 / span 1 / span 1;
-    grid-template-columns: 2fr 1fr;
-    grid-gap: .1em;
-    border-radius: .5em;
-    padding: .5em;
-    background-color: rgb(247,134,126);
-}
-.Dashboard__card-ethereum__logo {
-    grid-area: 1 / 1 / span 1 / span 1;
-    align-self: start;
-    width: 3em;
-    height: 3em;
-    border-radius: .5em;
-    padding: .2em .7em .7em .7em;
-    margin: .15em;
-    background-color: rgba(23, 23, 23, 1);
+.Dashboard__card__stats__lastMonth::before {
+    content: 'Last month';
+    font-family: 'Inter';
+    font-size: 1rem
 }
 .Dashboard__order__wrapper {
     display: grid;
@@ -388,9 +369,6 @@ th {
 }
 .Dashboard__order__table--total-bucks::before {
     content: '$';
-}
-.order__options__item {
-    background-color: rgba(255, 255, 255);
 }
 
 

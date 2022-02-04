@@ -1,0 +1,18 @@
+.Dasboard__card__options {
+    display: flex;
+    justify-self: end;
+    align-self: start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .1em;
+    grid-area: 1 / 2 / span 1 / span 1;
+    cursor: pointer;
+}
+
+.Dasboard__card__options-item {
+    width: .3em;
+    height: .3em;
+    border-radius: .15em;
+    /* background-color: $title; */
+}

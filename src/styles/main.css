@@ -8,9 +8,10 @@
 @import '../components/Sidebar/Sidebar.css';
 @import '../components/Dashboard/Dashboard__titles/Dashboard_Title/Dashboard__title.css';
 @import '../components/Dashboard/Dashboard__filter/Dashboard__filter.css';
-@import '../components/Dashboard/Dashboard__cards/Binance/Dashboard__card-binance.css';
+/* @import '../components/Dashboard/Dashboard__cards/Binance/Dashboard__card-binance.css';
 @import '../components/Dashboard/Dashboard__cards/Bitcoin/Dashboard__card-bitcoin.css';
-@import '../components/Dashboard/Dashboard__cards/Ethereum/Dashboard__card-ethereum.css';
+@import '../components/Dashboard/Dashboard__cards/Ethereum/Dashboard__card-ethereum.css'; */
+@import '../components/Dashboard/Dashboard__cards/DashboardCard.css';
 @import '../components/Dashboard/Dashboard__order/Dashboard__order.css'
 
 

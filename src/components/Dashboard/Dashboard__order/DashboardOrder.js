@@ -1,14 +1,13 @@
 import React from 'react';
+import OptionsIcon from '../Options/OptionsIcon';
 import './Dashboard__order.css'
+
+const white = 'rgba(255, 255, 255)';
 
 export default function DashboardOrder() {
   return <div className='Dashboard__order__wrapper'>
             <div className='Dashboard__order__title'>Sell Order</div>
-            <div className='Dasboard__card__options order__options'>
-                <div className='Dasboard__card__options-item order__options__item'></div>
-                <div className='Dasboard__card__options-item order__options__item'></div>
-                <div className='Dasboard__card__options-item order__options__item'></div>
-            </div>
+            <OptionsIcon color={white} />
             <table className='Dashboard__order__table' cellSpacing={0}>
                 <tr>
                     <th>Price</th>

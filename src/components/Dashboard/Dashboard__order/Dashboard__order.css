@@ -32,7 +32,3 @@ th {
 .Dashboard__order__table--total-bucks::before {
     content: '$';
 }
-
-.order__options__item {
-    background-color: $white;
-}
