@@ -99,64 +99,6 @@ strong::after {
     box-shadow: 0px 2px .8px rgba(185, 185, 185, 1);
     outline: none;
 };
-.Msgs_btn__ellipse {
-    position: relative;
-    width: 2em;
-    height: 2em;
-    border-radius: 1em;
-    background-color: grey;
-    border: none;
-    cursor: pointer;
-}
-.Msgs_btn__ellipse::before {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 1.5em;
-        height: 1.5em;
-        transform: translate(17%, -50%);
-        background-image: url('/src/assets/envelope-regular.svg');
-        background-repeat: no-repeat;
-    }
-.Nots_btn__ellipse {
-    position: relative;
-    width: 2em;
-    height: 2em;
-    border: none;
-    border-radius: 1em;
-    background-color: grey;
-    cursor: pointer;
-}
-.Nots_btn__ellipse::before {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 1.5em;
-        height: 1.5em;
-        transform: translate(23%, -53%);
-        background-image: url('/src/assets/bell-solid.svg');
-        background-repeat: no-repeat;
-    }
-.Settings_btn__ellipse {
-    position: relative;
-    width: 2em;
-    height: 2em;
-    border-radius: 1em;
-    border: none;
-    padding: .25em;
-    background-color: grey;
-    cursor: pointer;
-}
-.Settings_btn__ellipse::before {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 1.5em;
-        height: 1.5em;
-        transform: translate(1%, -50%);
-        background-image: url('/src/assets/cog-solid.svg');
-        color: rgb(229,229,229);
-    }
 .Sidebar__wrapper {
     position: fixed;
     grid-area: 2 / 1 / span 4 / span 1;
@@ -170,7 +112,10 @@ strong::after {
     transition: .5s;
     background-color: rgb(59,59,59);
 }
-.Sidebar__nav a {
+.Sidebar__nav__closebtn {
+    position: absolute;
+    top: 0;
+    right: .25em;
     padding: .2em .2em .7em 2em;
     text-decoration: none;
     font-size: 1.2rem;
@@ -180,66 +125,9 @@ strong::after {
     transition: 0.5s;
     cursor: pointer;
 }
-.Sidebar__nav a:hover {
+.Sidebar__nav__closebtn:hover {
         color: rgba(255, 255, 255);
     }
-.Sidebar__nav__closebtn {
-    position: absolute;
-    top: 0;
-    right: .25em;
-}
-.Sidebar__nav__item-1::before {
-    content: '';
-    position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    left: 0.5em;
-    background-image: url('/src/assets/columns-solid.svg');
-}
-.Sidebar__nav__item-2::before {
-    content: '';
-    position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    left: 0.5em;
-    background-image: url('/src/assets/wallet-solid.svg');
-}
-.Sidebar__nav__item-3::before {
-    content: '';
-    position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    left: 0.5em;
-    background-image: url('/src/assets/money-bill-wave-solid.svg');
-    background-repeat: no-repeat;
-}
-.Sidebar__nav__item-4::before {
-    content: '';
-    position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    left: 0.5em;
-    background-image: url('/src/assets/bitcoin-brands.svg');
-    background-repeat: no-repeat;
-}
-.Sidebar__nav__item-5::before {
-    content: '';
-    position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    left: 0.5em;
-    background-image: url('/src/assets/exchange-alt-solid.svg');
-    background-repeat: no-repeat;
-}
-.Sidebar__nav__item-6::before {
-    content: '';
-    position: absolute;
-    width: 1.5rem;
-    height: 1.5rem;
-    left: 0.5em;
-    background-image: url('/src/assets/cog-solid.svg');
-    background-repeat: no-repeat;
-}
 @media only screen and (max-width: 600px) {
     .Sidebar__wrapper {margin-top: 6em;}
     .Sidebar__nav a {font-size: 1rem;}
@@ -267,9 +155,6 @@ strong::after {
         background-image: url('/src/assets/filter-solid.svg');
         background-repeat: no-repeat;
     }
-/* @import '../components/Dashboard/Dashboard__cards/Binance/Dashboard__card-binance.css';
-@import '../components/Dashboard/Dashboard__cards/Bitcoin/Dashboard__card-bitcoin.css';
-@import '../components/Dashboard/Dashboard__cards/Ethereum/Dashboard__card-ethereum.css'; */
 .Dashboard__card__wrapper_green {
     display: grid;
     grid-area: 2 / 1 / span 1 / span 1;
