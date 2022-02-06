@@ -27,18 +27,12 @@ export default function Sidebar() {
   return <div className='Sidebar__wrapper' tabIndex={0} id='Sidebar'>
             <nav className='Sidebar__nav'>
                 <a className='Sidebar__nav__closebtn ' onClick={closeNav}>&times;</a>
-                <SidebarItem name={'Dashboard'} svg={imgs[0]}/>
-                <SidebarItem name={'Wallet'} svg={imgs[1]}/>
-                <SidebarItem name={'Transaction'} svg={imgs[2]}/>
-                <SidebarItem name={'Crypto'} svg={imgs[3]}/>
-                <SidebarItem name={'Exchange'} svg={imgs[4]}/>
-                <SidebarItem name={'Settings'} svg={imgs[5]}/>
-                {/* <a className='Sidebar__nav__item-1' href='#'>Dashboard</a>
-                <a className='Sidebar__nav__item-2' href='#'>Wallet</a>
-                <a className='Sidebar__nav__item-3' href='#'>Transaction</a>
-                <a className='Sidebar__nav__item-4' href='#'>Crypto</a>
-                <a className='Sidebar__nav__item-5' href='#'>Exchange</a>
-                <a className='Sidebar__nav__item-6' href='#'>Settings</a> */}
+                <SidebarItem name={'Dashboard'} svg={imgs[0]} link={'/dashboard'}/>
+                <SidebarItem name={'Wallet'} svg={imgs[1]} link={'/wallet'}/>
+                <SidebarItem name={'Transaction'} svg={imgs[2]} link={'/transation'}/>
+                <SidebarItem name={'Crypto'} svg={imgs[3]} link={'/crypto'}/>
+                <SidebarItem name={'Exchange'} svg={imgs[4]} link={'/exchange'}/>
+                <SidebarItem name={'Settings'} svg={imgs[5]} link={'/settings'}/>
             </nav>
         </div>;
 }

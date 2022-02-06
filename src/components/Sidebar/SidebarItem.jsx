@@ -8,14 +8,14 @@ export default function SidebarItem(props) {
         textDecoration: 'none',
         fontSize: '1.2rem',
         fontFamily: 'Inter',
-        color: '$text_icons',
+        color: 'rgba(185, 185, 185, 1)',
         display: 'block',
         transition: '0.5s',
         cursor: 'pointer',
-        "&:hover": {
-            color: '$white',
-            // color: 'rgba(255, 255, 255)',
-        }
+        '&::hover': 'rgba(255, 255, 255)',
+        // "&:hover": {
+        //     color: 'rgba(255, 255, 255)',
+        // }
     }
     const icon = {
         position: 'absolute',
@@ -23,11 +23,11 @@ export default function SidebarItem(props) {
         height: '1.5rem',
         left: '0.5em',
     }
-    
+
   return (
     <div>
         <div style={icon}>{props.svg}</div>
-        <a className='Sidebar__nav__item' href={props.link} style={sidebarItemStyle}>{props.name}</a>
+        <a className='Sidebar__nav__item' href={props.link} style={sidebarItemStyle} id='sidebarLink' >{props.name}</a>
     </div>
   );
 }
